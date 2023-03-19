@@ -1,15 +1,13 @@
-import * as React from 'react';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import ColorLensIcon from '@mui/icons-material/ColorLens';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Airplay from '@mui/icons-material/Airplay';
-import PeopleIcon from '@mui/icons-material/People';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import LayersIcon from '@mui/icons-material/Layers';
-import AssignmentIcon from '@mui/icons-material/Assignment';
+import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 export const mainListItems = (
   <React.Fragment>
@@ -21,11 +19,11 @@ export const mainListItems = (
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <Airplay />
+        <ColorLensIcon />
       </ListItemIcon>
       <ListItemText primary="Theme" />
     </ListItemButton>
-    
+
   </React.Fragment>
 );
 
